@@ -10,10 +10,10 @@ app.config['SECRET_KEY'] = 'hard to guess string'
 
 bootstrap = Bootstrap(app)
 moment = Moment(app)
-uoft_identifier = "@mail.utoronto.ca"
+uoft_identifier = "utoronto.ca"
 
 class NameForm(FlaskForm):
-    name = StringField('What is your name', validators=[DataRequired()])
+    name = StringField('What is your name?', validators=[DataRequired()])
     email = EmailField('What is your UofT Email address?', validators=[DataRequired()])
     submit = SubmitField('Submit')
 
